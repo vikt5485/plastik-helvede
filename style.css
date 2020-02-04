@@ -1,0 +1,657 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#screen {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+}
+
+#game {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#start {
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    background-image: url(assets/start_screen.svg);
+    background-size: 100%;
+    top: 0;
+}
+
+#play_knap {
+    position: absolute;
+    background-image: url(assets/play_knap.svg);
+    width: 16vw;
+    height: 18vw;
+    background-size: 100%;
+    top: 33vw;
+    left: 26vw;
+    cursor: pointer;
+}
+
+#settings_knap {
+    position: absolute;
+    background-image: url(assets/settings_knap.svg);
+    width: 5vw;
+    height: 5vw;
+    background-size: 100%;
+    top: 5vw;
+    right: 5vw;
+    cursor: pointer;
+}
+
+#settings_knap:hover {
+    animation-name: rotate_hover_kf;
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate_hover_kf {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+#settings_screen {
+    position: absolute;
+    background-image: url(assets/settings.svg);
+    width: 90vw;
+    height: 51.51315789473684vw;
+    background-size: 100%;
+    top: 2.625vw;
+    left: 5.5vw;
+}
+
+#exit_knap {
+    position: absolute;
+    background-image: url(assets/exit_button.svg);
+    width: 5vw;
+    height: 5vw;
+    background-size: 100%;
+    top: 4vw;
+    left: 4vw;
+    cursor: pointer;
+}
+
+#exit_knap:hover {
+    animation-name: rotate_hover_kf;
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate_hover_kf {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+#music {
+    position: absolute;
+    background-image: url(assets/music_button.svg);
+    width: 15vw;
+    height: 15vw;
+    background-size: 100%;
+    top: 29vw;
+    left: 19vw;
+    cursor: pointer;
+}
+
+#mute_music {
+    position: absolute;
+    background-image: url(assets/music_mute.svg);
+    width: 15vw;
+    height: 15vw;
+    background-size: 100%;
+    top: 29vw;
+    left: 19vw;
+    cursor: pointer;
+}
+
+#sound_effects {
+    position: absolute;
+    background-image: url(assets/sound_effects_button.svg);
+    width: 15vw;
+    height: 15vw;
+    background-size: 100%;
+    top: 29vw;
+    left: 52vw;
+    cursor: pointer;
+}
+
+#mute_sound_effects {
+    position: absolute;
+    background-image: url(assets/sound_effects_mute.svg);
+    width: 15vw;
+    height: 15vw;
+    background-size: 100%;
+    top: 29vw;
+    left: 52vw;
+    cursor: pointer;
+}
+
+/** INSTRUKTIONER **/
+
+#instruktioner_beskrivelse {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.6vw;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 7vw;
+    left: 60vw;
+}
+
+#start_knap {
+    background-image: url(assets/start_knap.svg);
+    width: 12vw;
+    height: 4vw;
+    background-size: 100%;
+    position: absolute;
+    top: 15.5vw;
+    left: 67vw;
+    cursor: pointer;
+}
+
+/** BAGGRUND **/
+
+#game_background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(assets/baggrund.svg);
+    background-size: 100%;
+}
+
+/** BAGGRUND ELEMENTER **/
+
+#sun_container {
+    position: absolute;
+    top: 2vw;
+    left: 5vw;
+    background-image: url(assets/sol.svg);
+    width: 10vw;
+    height: 10vw;
+    background-size: 100%;
+}
+
+
+#plastic_container3 {
+    position: absolute;
+    pointer-events: all;
+}
+
+#plastic_sprite3 {
+    background-image: url(assets/plastic_bottle.svg);
+    width: 5.604395604395604vw;
+    height: 15vw;
+    background-size: 100%;
+}
+
+#fish_container2 {
+    position: absolute;
+    pointer-events: all;
+}
+
+#fish_sprite2 {
+    background-image: url(assets/orange_fish.svg);
+    width: 13vw;
+    height: 10vw;
+    background-size: 100%;
+}
+
+#fish_container3 {
+    position: absolute;
+    pointer-events: all;
+}
+
+#fish_sprite3 {
+    background-image: url(assets/orange_fish.svg);
+    width: 13vw;
+    height: 10vw;
+    background-size: 100%;
+}
+
+
+/** MELLEMGRUND **/
+
+#game_middleground {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(assets/mellemgrund.svg);
+    background-size: 100%;
+    pointer-events: none;
+    top: 0;
+    overflow: hidden;
+}
+
+/** FORGRUND ELEMENTER **/
+
+#plastic_container1 {
+    position: absolute;
+    pointer-events: all;
+}
+
+#plastic_sprite1 {
+    background-image: url(assets/plastic_bottle.svg);
+    width: 5.604395604395604vw;
+    height: 15vw;
+    background-size: 100%;
+}
+
+#plastic_container2 {
+    position: absolute;
+    pointer-events: all;
+}
+
+#plastic_sprite2 {
+    background-image: url(assets/plastic_bottle.svg);
+    width: 5.604395604395604vw;
+    height: 15vw;
+    background-size: 100%;
+}
+
+#fish_container1 {
+    position: absolute;
+    pointer-events: all;
+}
+
+#fish_sprite1 {
+    background-image: url(assets/green_fish.svg);
+    width: 22.542372881355934vw;
+    height: 10vw;
+    background-size: 100%;
+}
+
+/** FORGRUND **/
+
+#game_foreground {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(assets/forgrund.svg);
+    background-size: 100%;
+    bottom: 0;
+    pointer-events: none;
+}
+
+/** FORGRUND ELEMENTER **/
+
+#figur_container {
+    position: absolute;
+    top: 15vw;
+    left: 5vw;
+    background-image: url(assets/figur.svg);
+    width: 41.78571428571429vw;
+    height: 35vw;
+    background-size: 100%;
+}
+
+
+/** POSITIONER **/
+.bg_pos0 {
+    top: 33vw;
+    right: 43vw;
+}
+
+.bg_pos1 {
+    top: 30vw;
+    right: 30vw;
+}
+
+.bg_pos2 {
+    top: 31vw;
+    right: 10vw;
+}
+
+.fg_pos0 {
+    top: 38vw;
+    right: 1vw;
+}
+
+.fg_pos1 {
+    top: 40vw;
+    right: 17vw;
+}
+
+.fg_pos2 {
+    top: 40vw;
+    right: 50vw;
+}
+
+
+/** UI **/
+
+#game_ui_background {
+    position: absolute;
+    top: 2vw;
+    right: 10vw;
+    background-image: url(assets/sky.svg);
+    width: 33.170731707317074vw;
+    height: 20vw;
+    background-size: 100%;
+}
+
+/** TID **/
+
+#time_board_container {
+    background-image: url(assets/time_empty_2.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 2vw;
+    right: 5vw;
+    overflow: hidden;
+}
+
+#time_board_sprite {
+    background-image: url(assets/time_full_2.svg);
+    width: 1.4634146341463414vw;
+    height: 20vw;
+    background-size: 100%;
+}
+
+/** POINT **/
+#score_board {
+    position: absolute;
+    top: 7vw;
+    right: 25vw;
+    background-image: url(assets/point.svg);
+    width: 5.666666666666666vw;
+    height: 5.999999999999999vw;
+    background-size: 100%;
+
+}
+
+#score_board_count {
+    position: absolute;
+    top: 0.3vw;
+    left: 6.5vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 4.5vw;
+    margin-top: 0.5vw;
+}
+
+
+/** LIV **/
+
+#energy_board_container1 {
+    background-image: url(assets/orange_fish_silhuet.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 14vw;
+    right: 31vw;
+}
+
+#energy_board_sprite1 {
+    background-image: url(assets/orange_fish.svg);
+    width: 6.587301587301587vw;
+    height: 5vw;
+    background-size: 100%;
+}
+
+#energy_board_container2 {
+    background-image: url(assets/orange_fish_silhuet.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 14vw;
+    right: 23vw;
+}
+
+#energy_board_sprite2 {
+    background-image: url(assets/orange_fish.svg);
+    width: 6.587301587301587vw;
+    height: 5vw;
+    background-size: 100%;
+}
+
+#energy_board_container3 {
+    background-image: url(assets/orange_fish_silhuet.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 14vw;
+    right: 15vw;
+}
+
+#energy_board_sprite3 {
+    background-image: url(assets/orange_fish.svg);
+    width: 6.587301587301587vw;
+    height: 5vw;
+    background-size: 100%;
+}
+
+
+#gameover {
+    position: absolute;
+    background-image: url(assets/game_over.svg);
+    width: 90.32530120481928vw;
+    height: 51vw;
+    background-size: 100%;
+    top: 2.625vw;
+    left: 5.5vw;
+}
+
+#game_over_text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 3.5vw;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 17vw;
+    left: 3vw;
+    color: #B0D5FF;
+}
+
+#levelcomplete {
+    position: absolute;
+    background-image: url(assets/level_complete.svg);
+    width: 89vw;
+    height: 51vw;
+    background-size: 100%;
+    top: 2.625vw;
+    left: 5.5vw;
+}
+
+#level_complete_text {
+    transform-origin: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 3.5vw;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 17vw;
+    left: 21vw;
+    color: #B0D5FF;
+
+}
+
+#restart_knap {
+    position: absolute;
+    background-image: url(assets/restart_button.svg);
+    width: 13vw;
+    height: 13vw;
+    background-size: 100%;
+    top: 33vw;
+    left: 38vw;
+    cursor: pointer;
+}
+
+#restart_knap1 {
+    position: absolute;
+    background-image: url(assets/restart_button.svg);
+    width: 13vw;
+    height: 13vw;
+    background-size: 100%;
+    top: 33vw;
+    left: 38vw;
+    cursor: pointer;
+}
+
+/** ANIMATION **/
+
+
+/** FORRESTE ELEMENTER **/
+
+.pop_up1 {
+    animation-name: pop_up_forgrund_kf;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes pop_up_forgrund_kf {
+    0% {
+        top: 38vw;
+    }
+
+    100% {
+        top: 50vw;
+
+    }
+}
+
+
+/** BAGERSTE ELEMENTER **/
+
+.pop_up2 {
+    animation-name: pop_up_baggrund_kf;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes pop_up_baggrund_kf {
+    0% {
+        top: 30vw;
+    }
+
+    100% {
+        top: 40vw;
+    }
+}
+
+
+/** ALLE ELEMENTER **/
+
+.fade_out {
+    animation-name: fade_out_kf;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade_out_kf {
+    0% {
+        opacity: 100;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+
+/** LIV ANIMATION **/
+
+.fade_out_energy {
+    animation-name: fade_out_energy_kf;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes fade_out_energy_kf {
+    0% {
+        opacity: 100;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/** TID ANIMATION **/
+
+.time_running {
+    animation-name: time_running_kf;
+    animation-duration: 30s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    transform-origin: bottom;
+}
+
+@keyframes time_running_kf {
+    0% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(0);
+    }
+}
+
+
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(1);
+
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.paused {
+    animation-play-state: paused;
+}

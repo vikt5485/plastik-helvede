@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastik Helvede</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+    <div id="screen">
+        <div id="game">
+            <div id="game_background">
+                <div id="plastic_container3" class="bg_pos1">
+
+                    <div id="plastic_sprite3">
+                    </div>
+                </div>
+                <div id="fish_container2" class="bg_pos0">
+
+                    <div id="fish_sprite2">
+                    </div>
+                </div>
+                <div id="fish_container3" class="bg_pos2">
+
+                    <div id="fish_sprite3">
+                    </div>
+                </div>
+            </div>
+            <div id="sun_container"></div>
+        </div>
+
+        <div id="game_middleground">
+            <div id="plastic_container1" class="fg_pos0">
+
+                <div id="plastic_sprite1">
+                </div>
+            </div>
+            <div id="plastic_container2" class="fg_pos2">
+
+                <div id="plastic_sprite2">
+                </div>
+            </div>
+            <div id="fish_container1" class="fg_pos1">
+
+                <div id="fish_sprite1">
+                </div>
+            </div>
+        </div>
+
+        <div id="game_foreground">
+            <div id="figur_container"></div>
+        </div>
+
+        <audio id="lyd_flaske" src="lyd/flaske_lyd.mp3"></audio>
+        <audio id="lyd_blob" src="lyd/blob_lyd.mp3"></audio>
+
+    </div>
+
+
+
+    <div id="game_ui">
+        <div id="game_ui_background"></div>
+
+        <div id="score_board">
+            <div id="score_board_count"></div>
+        </div>
+
+
+        <div id="energy_board_container1">
+            <div id="energy_board_sprite1"></div>
+        </div>
+
+        <div id="energy_board_container2">
+            <div id="energy_board_sprite2"></div>
+        </div>
+        <div id="energy_board_container3">
+            <div id="energy_board_sprite3"></div>
+        </div>
+
+
+        <div id="time_board_container">
+            <div id="time_board_sprite"></div>
+        </div>
+
+    </div>
+
+    <div id="instructions">
+        <p id="instruktioner_beskrivelse">Saml minimum 20 plastikflasker<br>
+            for at redde havet. Hvis du<br>
+            fanger fisk mister du liv,<br>
+            og fiskebestanden falder.</p>
+        <div id="start_knap"></div>
+    </div>
+
+    <div id="start">
+        <div id="play_knap"></div>
+    </div>
+
+    <div id="settings_knap"></div>
+    <div id="settings_screen">
+        <div id="exit_knap"></div>
+        <div id="music"></div>
+        <div id="mute_music"></div>
+        <div id="sound_effects"></div>
+        <div id="mute_sound_effects"></div>
+    </div>
+
+
+    <div id="gameover">
+        <div id="game_over_text"></div>
+        <div id="restart_knap"></div>
+    </div>
+    <div id="levelcomplete">
+        <div id="level_complete_text"></div>
+        <div id="restart_knap1"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
